@@ -1,0 +1,119 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background:  #EEE8AA;
+}
+
+/* Style the header */
+.header {
+    width: 100%;
+    background: #F2EEB8;
+    color: rgb(5, 5, 5);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    flex: 1;
+    padding: 0 20px;
+    transition: flex 0.3s; 
+}
+
+.header-right {
+    flex: 2;
+}
+
+.header-right ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right ul li {
+    padding: 0 20px;
+}
+
+.header-right ul li:hover {
+    border: 1px solid #316402;
+    background: #BF6F4D;
+    border-radius: 2px;
+}
+
+.header-right ul li a {
+    font-size: 18px;
+    color: #010101;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-right ul li a:hover {
+    color: #fff;
+}
+
+/* Media query for responsive design */
+@media ( max-width: 710px) {
+    .header-left {
+        max-height: fit-content;
+        font-size: 15px;
+        flex: 1; 
+        display: flex; 
+        align-items: center;
+    }
+}
+
+/* Style the main content with scroll */
+main {
+    max-width: 800vw;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 500px;
+    overflow-y: auto; 
+}
+
+/* Style the video section */
+#video-section {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#video-container {
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    max-width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the "Log out" button */
+.button-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff4500;
+}
